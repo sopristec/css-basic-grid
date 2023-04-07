@@ -1,148 +1,163 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<style>
-.grid-container {
-  display: grid;
-  background: gray;
-}
-.grid-container-2 {
-  display: grid;
-  background: cadetblue;
-  grid-template-rows: 100px 100px;
-  grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
-  grid-gap: 5px;
-}
-.grid-container-3 {
-    display: grid;
-    background: gray;
-    align-content: stretch;
-    justify-content: center;
-}
-.grid-container-4{
-    display: grid;
-    background: gray;
-    align-content: stretch;
-    justify-content: start;
-}
-.grid-container-5{
-    display: grid;
-    background: gray;
-    align-content: stretch;
-    justify-content: end;
-}
-.grid-container-6{
-    display: grid;
-    background: gray;
-    align-content: stretch;
-    justify-content: space-between;
-}
-.grid-container-7{
-    display: grid;
-    background: gray;
-    align-content: stretch;
-    justify-content: space-around;
-}
-.grid-container-8 {
-    display: grid;
-    background: cadetblue;
-    grid-template-rows: 100px 100px;
-    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
-    grid-gap: 5px;
-    align-items: center;
-}
-.grid-container-9 {
-    display: grid;
-    background: cadetblue;
-    grid-template-rows: 100px 100px;
-    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
-    grid-gap: 5px;
-    align-items: start;
-}
-.grid-container-10 {
-    display: grid;
-    background: cadetblue;
-    grid-template-rows: 100px 100px;
-    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
-    grid-gap: 5px;
-    align-items: end;
-}
-.grid-container-11 {
-    display: grid;
-    background: cadetblue;
-    grid-template-rows: 100px 100px;
-    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
-    grid-gap: 5px;
-    align-items: stretch;
-}
-.grid-container-12 {
-    display: grid;
-    background: palevioletred;
-    grid-template-rows: 100px 100px;
-    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
-    grid-gap: 5px;
-    justify-items: center;
-}
-.grid-container-13 {
-    display: grid;
-    background: palevioletred;
-    grid-template-rows: 100px 100px;
-    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
-    grid-gap: 5px;
-    justify-items: start;
-}
-.grid-container-14 {
-    display: grid;
-    background: palevioletred;
-    grid-template-rows: 100px 100px;
-    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
-    grid-gap: 5px;
-    justify-items: end;
-}
-.grid-container-15 {
-    display: grid;
-    background: palevioletred;
-    grid-template-rows: 100px 100px;
-    grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
-    grid-gap: 5px;
-    justify-items: stretch;
-}
-.grid-container-16 {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(200px, 1fr));
-  grid-gap: 5px;
-  justify-items: center;
-}
+  <style>
+    .grid-container {
+      display: grid;
+      background: gray;
+    }
 
-.grid-item1 {
-  background: grey;
-  text-align: center;
-  border: black 1px solid;
-  width: 100px;
-  height: 100px;
-}
+    .grid-container-2 {
+      display: grid;
+      background: cadetblue;
+      grid-template-rows: 100px 100px;
+      grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+      grid-gap: 5px;
+    }
+
+    .grid-container-3 {
+      display: grid;
+      background: gray;
+      align-content: stretch;
+      justify-content: center;
+    }
+
+    .grid-container-4 {
+      display: grid;
+      background: gray;
+      align-content: stretch;
+      justify-content: start;
+    }
+
+    .grid-container-5 {
+      display: grid;
+      background: gray;
+      align-content: stretch;
+      justify-content: end;
+    }
+
+    .grid-container-6 {
+      display: grid;
+      background: gray;
+      align-content: stretch;
+      justify-content: space-between;
+    }
+
+    .grid-container-7 {
+      display: grid;
+      background: gray;
+      align-content: stretch;
+      justify-content: space-around;
+    }
+
+    .grid-container-8 {
+      display: grid;
+      background: cadetblue;
+      grid-template-rows: 100px 100px;
+      grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+      grid-gap: 5px;
+      align-items: center;
+    }
+
+    .grid-container-9 {
+      display: grid;
+      background: cadetblue;
+      grid-template-rows: 100px 100px;
+      grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+      grid-gap: 5px;
+      align-items: start;
+    }
+
+    .grid-container-10 {
+      display: grid;
+      background: cadetblue;
+      grid-template-rows: 100px 100px;
+      grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+      grid-gap: 5px;
+      align-items: end;
+    }
+
+    .grid-container-11 {
+      display: grid;
+      background: cadetblue;
+      grid-template-rows: 100px 100px;
+      grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+      grid-gap: 5px;
+      align-items: stretch;
+    }
+
+    .grid-container-12 {
+      display: grid;
+      background: palevioletred;
+      grid-template-rows: 100px 100px;
+      grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+      grid-gap: 5px;
+      justify-items: center;
+    }
+
+    .grid-container-13 {
+      display: grid;
+      background: palevioletred;
+      grid-template-rows: 100px 100px;
+      grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+      grid-gap: 5px;
+      justify-items: start;
+    }
+
+    .grid-container-14 {
+      display: grid;
+      background: palevioletred;
+      grid-template-rows: 100px 100px;
+      grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+      grid-gap: 5px;
+      justify-items: end;
+    }
+
+    .grid-container-15 {
+      display: grid;
+      background: palevioletred;
+      grid-template-rows: 100px 100px;
+      grid-template-columns: 1fr 2fr 1fr 1fr 1fr;
+      grid-gap: 5px;
+      justify-items: stretch;
+    }
+
+    .grid-container-16 {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(200px, 1fr));
+      grid-gap: 5px;
+      justify-items: center;
+    }
+
+    .grid-item1 {
+      background: grey;
+      text-align: center;
+      border: black 1px solid;
+      width: 100px;
+      height: 100px;
+    }
 
 
 
-.grid-item{
-  border: 1px solid black;
-}
-
-
-</style>
+    .grid-item {
+      border: 1px solid black;
+    }
+  </style>
 </head>
+
 <body>
   <h1>Display Grid</h1>
-<div class="grid-container">
-  <div class="grid-item">1</div>
-  <div class="grid-item">2</div>
-  <div class="grid-item">3</div>
-  <div class="grid-item">4</div>
-  <div class="grid-item">5</div>
-  <div class="grid-item">6</div>
-</div>
-<h1>Columnas y Filas</h1>
-<div class="grid-container-2">
+  <div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+  </div>
+  <h1>Columnas y Filas</h1>
+  <div class="grid-container-2">
     <div class="grid-item">1</div>
     <div class="grid-item">2</div>
     <div class="grid-item">3</div>
@@ -152,74 +167,74 @@
   </div>
   <h1>Align items center</h1>
   <div class="grid-container-8">
-      <div class="grid-item">1</div>
-      <div class="grid-item">2</div>
-      <div class="grid-item">3</div>
-      <div class="grid-item">4</div>
-      <div class="grid-item">5</div>
-      <div class="grid-item">6</div>
-    </div>
-    <h1>Align items start</h1>
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+  </div>
+  <h1>Align items start</h1>
   <div class="grid-container-9">
-      <div class="grid-item">1</div>
-      <div class="grid-item">2</div>
-      <div class="grid-item">3</div>
-      <div class="grid-item">4</div>
-      <div class="grid-item">5</div>
-      <div class="grid-item">6</div>
-    </div>
-    <h1>Align items end</h1>
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+  </div>
+  <h1>Align items end</h1>
   <div class="grid-container-10">
-      <div class="grid-item">1</div>
-      <div class="grid-item">2</div>
-      <div class="grid-item">3</div>
-      <div class="grid-item">4</div>
-      <div class="grid-item">5</div>
-      <div class="grid-item">6</div>
-    </div>
-    <h1>Align items stretch</h1>
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+  </div>
+  <h1>Align items stretch</h1>
   <div class="grid-container-11">
-      <div class="grid-item">1</div>
-      <div class="grid-item">2</div>
-      <div class="grid-item">3</div>
-      <div class="grid-item">4</div>
-      <div class="grid-item">5</div>
-      <div class="grid-item">6</div>
-    </div>
-    <h1>Justify items center</h1>
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+  </div>
+  <h1>Justify items center</h1>
   <div class="grid-container-12">
-      <div class="grid-item">1</div>
-      <div class="grid-item">2</div>
-      <div class="grid-item">3</div>
-      <div class="grid-item">4</div>
-      <div class="grid-item">5</div>
-      <div class="grid-item">6</div>
-    </div>
-    <h1>Justifty items start</h1>
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+  </div>
+  <h1>Justifty items start</h1>
   <div class="grid-container-13">
-      <div class="grid-item">1</div>
-      <div class="grid-item">2</div>
-      <div class="grid-item">3</div>
-      <div class="grid-item">4</div>
-      <div class="grid-item">5</div>
-      <div class="grid-item">6</div>
-    </div>
-    <h1>Justify items end</h1>
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+  </div>
+  <h1>Justify items end</h1>
   <div class="grid-container-14">
-      <div class="grid-item">1</div>
-      <div class="grid-item">2</div>
-      <div class="grid-item">3</div>
-      <div class="grid-item">4</div>
-      <div class="grid-item">5</div>
-      <div class="grid-item">6</div>
-    </div>
-   
-      <h1>Repeat and minmax</h1>
-      <div class="grid-container-16">
-          <div class="grid-item1">1</div>
-          <div class="grid-item1">2</div>
-          <div class="grid-item1">3</div>
-          <div class="grid-item1">4</div>
-          <div class="grid-item1">5</div>
-          <div class="grid-item1">6</div>
-        </div>
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+  </div>
+
+  <h1>Repeat and minmax</h1>
+  <div class="grid-container-16">
+    <div class="grid-item1">1</div>
+    <div class="grid-item1">2</div>
+    <div class="grid-item1">3</div>
+    <div class="grid-item1">4</div>
+    <div class="grid-item1">5</div>
+    <div class="grid-item1">6</div>
+  </div>
